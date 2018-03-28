@@ -247,6 +247,7 @@ public class WeatherProvider extends ContentProvider {
              * In this case, we want to return a cursor that contains every row of weather data
              * in our weather table.
              */
+
             case CODE_WEATHER: {
                 cursor = mOpenHelper.getReadableDatabase().query(
                         WeatherContract.WeatherEntry.TABLE_NAME,
